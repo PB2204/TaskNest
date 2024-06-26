@@ -1,0 +1,61 @@
+name: tasknest
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.5
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+  sqflite: ^2.3.2
+  path: ^1.8.3
+  bloc: ^8.1.4
+  page_transition: ^2.1.0
+  get_it: ^7.6.7
+  jiffy: ^6.3.0
+  gradient_icon: ^2.0.9
+  uicons: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#09222C"
+  adaptive_icon_foreground: "assets/images/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/icon.png"
+    background_color: "#09222C"
+    theme_color: "#09222C"
+
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+  fonts:
+    - family: lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Black.ttf
+          weight: 700
+    - family: baloo
+      fonts:
+        - asset: assets/fonts/Baloo-Regular.ttf
